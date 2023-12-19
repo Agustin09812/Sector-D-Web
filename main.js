@@ -1,3 +1,19 @@
+$(document).ready(function () {
+  let navbar = $('.navbar')
+
+  let navbarHeight = navbar.height()
+
+  $(window).scroll(function () {
+    let scroll = $(window).scrollTop()
+
+    if (scroll > navbarHeight) {
+      navbar.addClass('navbar-scrolled')
+    } else {
+      navbar.removeClass('navbar-scrolled')
+    }
+  })
+})
+
 function changeActive(element) {
   let navLinks = document.querySelectorAll('.navbar-nav .nav-link')
   navLinks.forEach(function (link) {

@@ -191,7 +191,13 @@ body {
 ################################################################## */
 
 .menu {
+  background-color: none;
+  transition: background-color 500ms ease;
+}
+
+.navbar-scrolled {
   background-color: rgba(33, 33, 33, 0.95);
+  transition: background-color 500ms ease;
 }
 
 /* ##################################################################
@@ -566,6 +572,16 @@ footer {
 @media (min-width: 992px) {
   .display-3--title {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu {
+    background-color: rgba(33, 33, 33, 0.95);
+  }
+
+  .navbar-scrolled {
+    background-color: rgba(33, 33, 33, 0.95);
   }
 }
 
