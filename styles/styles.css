@@ -1,0 +1,605 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+/* font montserrat */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ### WHATSAPP BUTTON ### */
+
+.wppbtn {
+  position: fixed;
+  background-color: #25d366;
+  width: 3.47rem;
+  height: 3.47rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 1;
+
+  &:hover {
+    background-color: #40bfff;
+  }
+}
+
+.wppbtn i {
+  color: #fff;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* ########################## */
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+/* ##################################################################
+#######################    NAVBAR SECTION    #######################
+################################################################## */
+
+.menu {
+  background-color: rgba(33, 33, 33, 0.95);
+}
+
+/* ##################################################################
+####################################################################
+################################################################## */
+
+/* ##################################################################
+#####################    FRONT PAGE SECTION    #####################
+################################################################## */
+
+.intro-section {
+  background: #dd40fb;
+  background: linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
+  background: -webkit-linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
+  background: -moz-linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
+  padding: 12rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.background-image {
+  position: absolute;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: fit-content;
+  overflow: hidden;
+  z-index: -100;
+  /* Asegura que la imagen esté detrás del contenido */
+}
+
+.background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ajusta la imagen para cubrir el contenedor */
+}
+
+.intros {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  top: 20px;
+}
+
+.intros h1 {
+  font-weight: 800;
+  font-size: 6rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.intros p {
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.frontpage-btns {
+  gap: 1rem;
+}
+
+.frontpage-btns {
+  margin-top: 4rem;
+}
+
+.btn-danger {
+  color: #fff;
+  background: #ff597f;
+  background: linear-gradient(0deg, #ff597f 0%, #ff0548 80%);
+  background: -webkit-linear-gradient(0deg, #ff597f 0%, #ff0548 80%);
+  background: -moz-linear-gradient(0deg, #ff597f 0%, #ff0548 80%);
+  border-color: none;
+
+  &:hover {
+    color: #fff;
+    background: #c6006f;
+    background: linear-gradient(0deg, #c6006f 0%, #ff0548 80%);
+    background: -webkit-linear-gradient(0deg, #c6006f 0%, #ff0548 80%);
+    background: -moz-linear-gradient(0deg, #c6006f 0%, #ff0548 80%);
+    box-shadow: 0 0 5px 5px rgba(198, 0, 111, 0.1),
+      0 0 10px 10px rgba(255, 5, 72, 0.1), 0 0 20px 20px rgba(255, 5, 72, 0.1);
+    border-color: none;
+  }
+}
+
+/* ##################################################################
+####################################################################
+################################################################## */
+
+/* ##################################################################
+###################    MAIN: SERVICE SECTION    ####################
+################################################################## */
+
+.services {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.services__content {
+  padding: 1rem;
+  margin-top: 0;
+}
+
+.services__content p {
+  font-size: 1rem;
+}
+
+.services__content .icon {
+  font-size: 1.5rem;
+  color: #40bfff;
+}
+
+.display-3--title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  color: #212529;
+}
+
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #40bfff;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #40bfff;
+}
+
+/* ##################################################################
+####################################################################
+################################################################## */
+
+/* ##################################################################
+###################    MAIN: COURSE SECTION    ####################
+################################################################## */
+
+.card-header {
+  background: #dd40fb;
+  background: linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
+  background: -webkit-linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
+  background: -moz-linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
+  border-style: none;
+}
+
+.card-footer {
+  background: #dd40fb;
+  background: linear-gradient(270deg, #7351fd 0%, #dd40fb 80%);
+  background: -webkit-linear-gradient(270deg, #7351fd 0%, #dd40fb 80%);
+  background: -moz-linear-gradient(270deg, #7351fd 0%, #dd40fb 80%);
+  border-style: none;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.card-subtitle {
+  padding: 0.5rem;
+}
+
+.card-text {
+  padding: 0.5rem;
+}
+
+/* ##################################################################
+####################################################################
+################################################################## */
+
+/* ##################################################################
+##################    MAIN: PORTFOLIO SECTION    ###################
+################################################################## */
+
+.portfolio {
+  padding: 4rem 0;
+}
+
+.portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 0.5rem solid #40bfff;
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-box .portfolio-info {
+  background-color: rgba(64, 191, 255, 0.75);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.portfolio-box .portfolio-info .caption {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portfolio-box .portfolio-info .caption h4 {
+  text-transform: uppercase;
+  display: block;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.5);
+  transition-duration: 1s;
+  transition-property: all;
+}
+
+.portfolio-box:hover .portfolio-info {
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 1s;
+  transition-property: all;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* ##################################################################
+####################################################################
+################################################################## */
+
+/* ##################################################################
+###################    MAIN: CONTACT SECTION    ####################
+################################################################## */
+
+.gradient {
+  background: linear-gradient(153deg,
+      rgba(221, 64, 251, 0.95) 0%,
+      rgba(115, 81, 253, 0.95) 80%);
+}
+
+.get-started {
+  padding: 4rem 0;
+  background-color: #e9ecef;
+}
+
+.cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+
+.cta-info__list {
+  position: relative;
+  list-style-type: none;
+  display: block;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.cta-info__list li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.form {
+  padding: 0.5rem;
+}
+
+.form button {
+  border: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.form button a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* ##################################################################
+####################################################################
+################################################################## */
+
+/* ##################################################################
+######################    FOOTER SECTION    #######################
+################################################################## */
+
+footer {
+  background-color: #151414;
+}
+
+.footer {
+  padding-top: 1rem;
+  background-color: #151414;
+}
+
+.footer-sm a {
+  color: #fff;
+
+  &:hover {
+    color: #40bfff;
+  }
+}
+
+.footer-sm a i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.footer-bottom {
+  background-color: #000;
+}
+
+.footer-bottom__copyright {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.footer-bottom__copyright a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+
+.footer-bottom__copyright a:hover {
+  color: #40bfff;
+  text-decoration: underline;
+}
+
+/* ##################################################################
+####################################################################
+################################################################## */
+
+/* MEDIA QUERIES */
+
+@media (min-width: 992px) {
+  .display-3--title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 663px) {
+  .intro-section {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intros h1 {
+    font-size: 4rem;
+  }
+
+  .frontpage-btns {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+  .intro-section {
+    padding: 5rem;
+  }
+
+  .intros {
+    position: relative;
+    top: 20px;
+  }
+
+  .intros h1 {
+    font-size: 3rem;
+  }
+
+  .intros p {
+    font-size: 1rem;
+  }
+}

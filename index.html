@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- añadido "minimum-scale=1" para evitar bugs al escrolear en mobile hacia abajo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+  <link type="images/png" sizes="32x32" href="./assets/favicon-32x32.png" rel="icon" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+  <title>Sector de Marketing</title>
+</head>
+
+<body>
+  <header>
+    <!-- sección navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <img src="./assets/logo.png" style="width: 95px" alt="logo image" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav" id="navbarNavList">
+            <div>
+              <li class="nav-item">
+                <a class="nav-link text-center" onclick="changeActive(this)" href="#">Inicio</a>
+              </li>
+            </div>
+            <div>
+              <li class="nav-item">
+                <a class="nav-link text-center" onclick="changeActive(this)" href="#services">Servicios</a>
+              </li>
+            </div>
+            <div>
+              <li class="nav-item">
+                <a class="nav-link text-center" onclick="changeActive(this)" href="#capacitation">Capacitaciones</a>
+              </li>
+            </div>
+            <div>
+              <li class="nav-item">
+                <a class="nav-link text-center" onclick="changeActive(this)" href="#">Clientes</a>
+              </li>
+            </div>
+            <div>
+              <li class="nav-item">
+                <a class="nav-link text-center" onclick="changeActive(this)" href="#portfolio">Portfolio</a>
+              </li>
+            </div>
+            <div>
+              <li class="nav-item">
+                <a class="nav-link text-center" onclick="changeActive(this)" href="#contact">Contacto</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- sección navbar fin -->
+  </header>
+
+  <main>
+    <!-- sección portada -->
+    <section id="home" class="intro-section">
+      <div class="background-image">
+        <img src="./assets/portada.jpg" class="img-fluid" alt="Fondo" />
+      </div>
+      <div class="container d-flex justify-content-center">
+        <div class="introscontainer text-white d-flex justify-content-center">
+          <!-- comienza el contenido del intro -->
+          <div class="intros">
+            <h1><span>AGENCIA DIGITAL 360°</span></h1>
+            <p>
+              <span> Creando conexiones entre empresas y clientes.</span>
+            </p>
+            <div class="d-flex justify-content-around frontpage-btns">
+              <button type="button" class="btn btn-danger btn-lg">
+                Solicitar Cotización
+              </button>
+              <button type="button" class="btn btn-outline-light btn-lg">
+                Quiero que me llamen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sección portada fin -->
+
+    <!-- sección de servicios  -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">Acerca del Servicio</h1>
+          <div class="heading-line mb-1"></div>
+        </div>
+        <div class="row pt-1 pb-2 mt-0 mb-3">
+          <div class="bg-white p-3">
+            <p class="fw-light text-center fw-semibold">
+              Proveemos servicios 360º de posicionamiento en medios digitales,
+              ya sea que busques incrementar las ventas, mejorar la
+              visibilidad de tu marca o promocionar tus productos o servicios.
+              Contamos con un equipo de Community Manager integral
+              especializado en la gestión de redes sociales comerciales,
+              institucionales y profesionales. Con nosotros, tu presencia en
+              las plataformas digitales será gestionada de manera efectiva,
+              asegurando una conexión sólida con tu audiencia y potenciando
+              tus objetivos empresariales.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fas fa-calendar-alt"></div>
+              <h3 class="display-3--title mt-1">
+                Community Manager Integral
+              </h3>
+              <p class="lh-lg">
+                Gestión de redes sociales comerciales, institucionales y
+                profesionales. Posteos diarios, gestión de comentarios,
+                respuestas a mensajes, re direccionamiento a tu WhatsApp, web
+                o e-commerce. Campañas orgánicas y pagas (ADS), públicos
+                objetivos, campañas de conversión. Construcción de enlaces
+                editados para todas las campañas orgánicas (esto permite medir
+                el origen del dato). Reporte de Analíticas mensual y reunión
+                de 45 min.
+              </p>
+            </div>
+          </div>
+
+          <!-- Servicio 2: Marketing de Contenidos -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fas fa-paint-brush"></div>
+              <h3 class="display-3--title mt-1">Marketing de Contenidos</h3>
+              <p class="lh-lg">
+                Generación de contenidos: videos, flyers, clips, gif.
+                Diversificación del marketing, incluyendo enfoques
+                promocionales, de branding (marketing de marca), conectivo
+                emocional e informativo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Servicio 3: Video y Fotografía -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fas fa-camera"></div>
+              <h3 class="display-3--title mt-1">Video y Fotografía</h3>
+              <p class="lh-lg">
+                Producción, filmación, dirección de arte y edición. Servicios
+                para contenido institucional, publicitario y de productos
+                (gastronomía, indumentaria, inmobiliaria, etc.).
+              </p>
+            </div>
+          </div>
+
+          <!-- Servicio 4: Diseño Gráfico -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fas fa-paint-brush"></div>
+              <h3 class="display-3--title mt-1">Diseño Gráfico</h3>
+              <p class="lh-lg">
+                Diseño gráfico para redes sociales, web, gráfica exterior,
+                ploteos y vidrieras.
+              </p>
+            </div>
+          </div>
+
+          <!-- Servicio 5: Copywriting con IA -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fas fa-font"></div>
+              <h3 class="display-3--title mt-1">Copywriting con IA</h3>
+              <p class="lh-lg">
+                Textos neurocognitivos y conectivos según el tipo de cliente y
+                conciencia de compra.
+              </p>
+            </div>
+          </div>
+
+          <!-- Servicio 6: Campañas Publicitarias Ads -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fas fa-ad"></div>
+              <h3 class="display-3--title mt-1">
+                Campañas Publicitarias Ads
+              </h3>
+              <p class="lh-lg">
+                Publicidad en Google, YouTube, Facebook, Instagram y WhatsApp.
+              </p>
+            </div>
+          </div>
+
+          <!-- Servicio 7: WhatsApp Marketing -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fab fa-whatsapp"></div>
+              <h3 class="display-3--title mt-1">WhatsApp Marketing</h3>
+              <p class="lh-lg">
+                Contenidos de marketing, envíos masivos a clientes, lleva tus
+                bases de datos a WhatsApp, campañas de comunicación en
+                WhatsApp y funnel de comunicación con objetivos concretos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Servicio 8: Servicios Web -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fas fa-globe"></div>
+              <h3 class="display-3--title mt-1">Servicios Web</h3>
+              <p class="lh-lg">
+                Desarrollo de páginas, landing pages y tiendas online.
+              </p>
+            </div>
+          </div>
+
+          <!-- Servicio 9: Pack Digital Personalizado -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fas fa-box"></div>
+              <h3 class="display-3--title mt-1">
+                Pack Digital Personalizado
+              </h3>
+              <p class="lh-lg">
+                Diseño del pack para tus redes sociales, 100% personalizado
+                con tu marca, logo, productos, efemérides, saludos
+                institucionales y sorteos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Servicio 10: Pack de Marketing Inmobiliario -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services">
+            <div class="services__content">
+              <div class="icon d-block fas fa-building"></div>
+              <h3 class="display-3--title mt-1">
+                Pack de Marketing Inmobiliario
+              </h3>
+              <p class="lh-lg">
+                Editable según tu marca y operación, para fotos o video del
+                inmueble, con efemérides anuales, saludos institucionales,
+                marketing conectivo e informativo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sección de servicios fin -->
+
+    <!-- cursos & capacitaciones -->
+    <section class="capacitations" id="capacitation">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">Cursos & Capacitaciones</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+    </section>
+
+    <div class="container">
+      <label for="cursoSelector">Selecciona un curso</label>
+      <select id="cursoSelector" class="form-select" aria-label="Default select example">
+        <option selected>None</option>
+        <option value="1" class="fw-medium">VENTA INMOBILIARIA: Transformación Digital Del Mercado Inmobiliario</option>
+        <option value="2" class="fw-medium">CURSO EN EMPRESAS: Neuromarketing Digital</option>
+        <option value="3" class="fw-medium">NEUROVENTAS DIGITALES</option>
+        <option value="4" class="fw-medium">WHATSAPP MARKETING</option>
+        <option value="5" class="fw-medium">SECRETOS DEL COPYCHAT</option>
+      </select>
+    </div>
+
+    <!-- curso 1 NEW -->
+    <article class="container">
+      <div class="row">
+        <div id="curso1" class="col-lg-12 mt-4">
+          <div class="row card-container">
+            <!-- Imagen a la izquierda -->
+            <div class="col-lg-6">
+              <div id="carousel1" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!-- Imagen del curso fin -->
+            <div class="col-lg-6">
+              <!-- Contenido del curso -->
+              <h3 class="mt-4 fw-bold">VENTA INMOBILIARIA</h3>
+              <h5 class="mt-3">
+                Transformación Digital Del Mercado Inmobiliario
+              </h5>
+              <p class="mt-3">
+                Descubre las últimas tendencias en el sector inmobiliario
+                enfrentando nuevos retos de la comunicación digital. Sumérgete
+                en la transformación del vendedor inmobiliario, aprendiendo
+                estrategias para convertir clientes digitales en presenciales.
+                Explora formas efectivas de presentar propiedades en el
+                entorno digital y potencia el crecimiento mediante el
+                marketing conectivo producto-marca. Define tus clientes
+                objetivos con una segmentación precisa basada en propiedades y
+                operaciones. Suma habilidades con el "Árbol de producto
+                digital": desde el código simbólico del producto hasta una
+                comunicación adecuada con el cliente. Conoce las claves para
+                campañas publicitarias exitosas que destacarán tu presencia en
+                el mercado.
+              </p>
+              <a href="#" class="btn btn-danger mt-3">Más información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- curso 2 NEW -->
+      <div class="container">
+        <div class="row">
+          <div id="curso2" class="col-lg-12 mt-4">
+            <div class="row card-container">
+              <!-- Imagen a la izquierda -->
+              <div class="col-lg-6">
+                <div id="carousel2" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Imagen del curso fin -->
+              <div class="col-lg-6">
+                <!-- Contenido del curso -->
+                <h3 class="mt-4 fw-bold">CURSO EN EMPRESAS</h3>
+                <h5 class="mt-3">
+                  Neuromarketing Digital
+                </h5>
+                <p class="mt-3">
+                  Descubre el arte de la comunicación efectiva con nuestro curso
+                  integral. Desde la creación de un código simbólico de producto
+                  hasta el dominio de la comunicación visual, explorarás cómo
+                  adaptar el copywriting a diferentes fases de conciencia de
+                  compra. Aprenderás a construir una imagen de marca sólida y a
+                  utilizar plataformas de edición de fotografía y video
+                  diseñadas para principiantes. Además, sumérgete en el
+                  fascinante mundo de la neuro segmentación y aprende a
+                  personalizar estrategias de marketing según la psicología del
+                  consumidor. Este curso te proporcionará las herramientas
+                  esenciales para destacar en un entorno digital competitivo.
+                </p>
+                <a href="#" class="btn btn-danger mt-3">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- curso 3 NEW -->
+          <div class="container">
+            <div class="row">
+              <div id="curso3" class="col-lg-12 mt-4">
+                <div class="row card-container">
+                  <!-- Imagen a la izquierda -->
+                  <div class="col-lg-6">
+                    <div id="carousel3" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active"
+                          aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2"
+                          aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Imagen del curso fin -->
+                  <div class="col-lg-6">
+                    <!-- Contenido del curso -->
+                    <h3 class="mt-4 fw-bold">NEUROVENTAS DIGITALES</h3>
+                    <p class="mt-3">
+                      Descifra los misterios de la mente del comprador en el ámbito
+                      digital con nuestro curso especializado. Explora los
+                      comportamientos del consumidor y aprende a crear un código
+                      simbólico que represente tu producto y marca de manera
+                      poderosa. Profundiza en la identificación de clientes
+                      objetivos a través de avatares y perfecciona el arte del
+                      diálogo digital. Descubre cómo transformar a un cliente de
+                      matriz digital en una venta concreta y domina la creación de
+                      embudos de conversión digital en diversos medios. Este curso
+                      te equipará con conocimientos clave para influir positivamente
+                      en las decisiones de compra en el entorno digital actual.
+                    </p>
+                    <a href="#" class="btn btn-danger mt-3">Más información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- curso 4 NEW -->
+              <div class="container">
+                <div class="row">
+                  <div id="curso4" class="col-lg-12 mt-4">
+                    <div class="row card-container">
+                      <!-- Imagen a la izquierda -->
+                      <div class="col-lg-6">
+                        <div id="carousel4" class="carousel slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active"
+                              aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- Imagen del curso fin -->
+                      <div class="col-lg-6">
+                        <!-- Contenido del curso -->
+                        <h3 class="mt-4 fw-bold">WHATSAPP MARKETING</h3>
+                        <p class="mt-3">
+                          Explora el potencial de WhatsApp Business con nuestro curso
+                          práctico. Desde la creación de catálogos digitales hasta el
+                          aprovechamiento de herramientas empresariales integradas,
+                          descubre cómo maximizar el uso de WhatsApp para tu negocio.
+                          Aprende estrategias efectivas de reenvío de mensajes y
+                          sumérgete en el marketing por objetivos. Desarrolla embudos de
+                          comunicación específicos para WhatsApp y domina el arte de
+                          influir a través de este canal. Con 6 horas de capacitación,
+                          este curso te proporcionará las habilidades esenciales para
+                          aprovechar al máximo la plataforma de mensajería más utilizada
+                          del mundo.
+                        </p>
+                        <a href="#" class="btn btn-danger mt-3">Más información</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- curso 5 NEW -->
+                  <div class="container">
+                    <div class="row">
+                      <div id="curso5" class="col-lg-12 mt-4">
+                        <div class="row card-container">
+                          <!-- Imagen a la izquierda -->
+                          <div class="col-lg-6">
+                            <div id="carousel5" class="carousel slide">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active"
+                                  aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1"
+                                  aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel5" data-bs-slide-to="2"
+                                  aria-label="Slide 3"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- Imagen del curso fin -->
+                          <div class="col-lg-6">
+                            <!-- Contenido del curso -->
+                            <h3 class="mt-4 fw-bold">SECRETOS DEL COPYCHAT</h3>
+                            <p class="mt-3">
+                              Explora un método innovador para potenciar tus ventas en el
+                              entorno digital con nuestro curso único. La fusión de
+                              Neuroventas y Neuromarketing te ofrece la herramienta
+                              definitiva para hacer que vender en línea sea más fácil,
+                              efectivo y rápido. Sumérgete en el concepto de "Neuroventas:
+                              mente digital", desde cómo funciona hasta los conectores
+                              corticales, emocionales y reptilianos que influyen en las
+                              decisiones de compra. Descubre cómo estimular el deseo y
+                              cerrar ventas en el ámbito digital, aprende a pasar de
+                              consultas digitales a reuniones presenciales y domina la
+                              bajada publicitaria con neuromarketing. Con 12 horas de
+                              capacitación, este curso también ofrece coaching digital para
+                              dueños y gerentes, brindándote las herramientas necesarias
+                              para comprender y liderar el desarrollo digital de tu empresa
+                              en esta nueva era.
+                            </p>
+                            <a href="#" class="btn btn-danger mt-3">Más información</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    </article>
+    <!-- cursos & capacitaciones fin -->
+
+    <!-- sección portfolio -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row text-center mt-5">
+          <h1 class="display-3 fw-bold text-capitalize">
+            Últimos Trabajos Realizados
+          </h1>
+          <div class="heading-line"></div>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            porro temporibus distinctio.
+          </p>
+        </div>
+        <br />
+        <!-- FILTER BUTTONS  -->
+        <!-- <div class="row mt-5 mb-4 g-3 text-center">
+        <div class="col-md-12">
+          <button class="btn btn-outline-primary" type="button">Todo</button>
+          <button class="btn btn-outline-primary" type="button">Sitios web</button>
+          <button class="btn btn-outline-primary" type="button">Diseño</button>
+          <button class="btn btn-outline-primary" type="button">Mockup</button>
+        </div>
+      </div> -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img src="./assets/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture"
+                class="img-fluid" />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>project name goes here 1</h4>
+                  <p>category project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img src="./assets/portfolio/portfolio-2.jpg" alt="portfolio 2 image" title="portfolio 2 picture"
+                class="img-fluid" />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>project name goes here 2</h4>
+                  <p>category project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img src="./assets/portfolio/portfolio-3.jpg" alt="portfolio 3 image" title="portfolio 3 picture"
+                class="img-fluid" />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>project name goes here 3</h4>
+                  <p>category project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img src="./assets/portfolio/portfolio-4.jpg" alt="portfolio 4 image" title="portfolio 4 picture"
+                class="img-fluid" />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>project name goes here 4</h4>
+                  <p>category project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img src="./assets/portfolio/portfolio-5.jpg" alt="portfolio 5 image" title="portfolio 5 picture"
+                class="img-fluid" />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>project name goes here 5</h4>
+                  <p>category project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img src="./assets/portfolio/portfolio-6.jpg" alt="portfolio 6 image" title="portfolio 6 picture"
+                class="img-fluid" />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>project name goes here 6</h4>
+                  <p>category project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img src="./assets/portfolio/portfolio-7.jpg" alt="portfolio 7 image" title="portfolio 7 picture"
+                class="img-fluid" />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>project name goes here 7</h4>
+                  <p>category project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img src="./assets/portfolio/portfolio-8.jpg" alt="portfolio 8 image" title="portfolio 8 picture"
+                class="img-fluid" />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>project name goes here 8</h4>
+                  <p>category project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow">
+              <img src="./assets/portfolio/portfolio-9.jpg" alt="portfolio 9 image" title="portfolio 9 picture"
+                class="img-fluid" />
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>project name goes here 9</h4>
+                  <p>category project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sección portfolio fin -->
+
+    <!-- sección contacto -->
+    <section id="contact" class="get-started">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-capitalize">¡Contactanos!</h1>
+          <div class="heading-line"></div>
+          <p class="lh-lg">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+            illum architecto modi.
+          </p>
+        </div>
+        <div class="row text-white">
+          <div class="col-12 col-lg-6 gradient shadow p-3">
+            <div class="cta-info w-100">
+              <h4 class="display-4 fw-bold">
+                Nuestro servicio es 100% confiable
+              </h4>
+              <p class="lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam alias optio minima, tempore architecto sint ipsam
+                dolore tempora facere laboriosam corrupti!
+              </p>
+              <h3 class="display-3--brief">Asesorate</h3>
+              <ul class="cta-info__list">
+                <li>We'll prepare the proposal.</li>
+                <li>we'll discuss it together.</li>
+                <li>let's start the discussion.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 bg-white shadow p-3">
+            <div class="form w-100 pb-2">
+              <h4 class="display-3--title mb-5">Formulario de contacto</h4>
+              <form action="https://formspree.io/f/maygzrov" method="post" class="row">
+                <div class="col-lg-12 mb-3">
+                  <input type="text" name="name" id="name" placeholder="Nombre y Apellido"
+                    class="shadow form-control form-control-lg" required />
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <input type="email" name="email" id="email" placeholder="Email"
+                    class="shadow form-control form-control-lg" required />
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <input type="text" name="subject" id="subject" placeholder="Asunto"
+                    class="shadow form-control form-control-lg" required />
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <textarea name="message" id="message" placeholder="Mensaje" rows="8"
+                    class="shadow form-control form-control-lg" required></textarea>
+                </div>
+                <div class="text-center d-grid mt-1">
+                  <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3">
+                    Enviar
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sección contacto fin -->
+  </main>
+
+  <footer>
+    <!-- sección footer -->
+    <div class="footer-sm" style="background-color: #212121">
+      <div class="container">
+        <div class="row py-4 text-center text-white">
+          <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            ¡Seguinos en nuestras redes!
+          </div>
+          <div class="col-lg-7 col-md-6 socialmedia-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 text-center">
+      <div class="row text-white justify-content-center mt-3 pb-3">
+        <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+          <h5 class="text-capitalize fw-bold">Sector D</h5>
+          <hr class="bg-white d-inline-block mb-4" style="width: 300px; height: 2px" />
+          <p class="lh-lg">
+            Después de 15 años de experiencia en marketing gráfico,
+            comprendimos rápidamente la importancia de la innovación en la era
+            digital. Nos capacitamos, nos adaptamos y formamos un equipo
+            sólido con conocimientos en Neuromarketing y Neuroventas, lo que
+            transformó radicalmente nuestra agencia. En el ámbito de la
+            comunicación digital, reconocemos la necesidad constante de
+            herramientas tanto prácticas como teóricas, y estamos
+            comprometidos en mantenernos actualizados en un entorno que
+            evoluciona constantemente. A través de la aplicación de las
+            Neurociencias, hemos logrado trabajar de manera efectiva con una
+            amplia variedad de productos y servicios.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom pt-5 pb-5">
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col-12">
+            <div class="footer-bottom__copyright">
+              &COPY; Copyright 2023 | Sector D | Todos los derechos reservados
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- whatsapp btn  -->
+
+  <div class="wppbtn-container">
+    <a href="" class="shadow btn-primary rounded-circle wppbtn">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- ---------------------- -->
+
+  <!-- sección de scripts-->
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- main script -->
+  <script src="./main.js"></script>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/3151bdbeb8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
