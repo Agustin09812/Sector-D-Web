@@ -152,9 +152,11 @@ body {
   right: 1.875rem;
   bottom: 1.875rem;
   z-index: 1;
+  transition: all 250ms ease;
 
   &:hover {
-    background-color: #40bfff;
+    background-color: #dd40fb;
+    transform: scale(1.2);
   }
 }
 
@@ -213,7 +215,7 @@ body {
   background: linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
   background: -webkit-linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
   background: -moz-linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
-  padding: 12rem;
+  padding: 15rem;
   width: 100%;
   height: 100%;
   position: relative;
@@ -244,7 +246,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   position: relative;
-  top: 20px;
+  top: -40px;
 }
 
 .intros h1 {
@@ -588,6 +590,13 @@ footer {
 @media (max-width: 663px) {
   .intro-section {
     padding: 5rem;
+  }
+}
+
+@media (max-width: 662px) {
+  .intros {
+    position: relative;
+    top: 20px;
   }
 }
 
