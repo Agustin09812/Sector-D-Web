@@ -43,11 +43,11 @@
                 <a class="nav-link text-center" onclick="changeActive(this)" href="#capacitation">Capacitaciones</a>
               </li>
             </div>
-            <div>
+            <!-- <div>
               <li class="nav-item">
                 <a class="nav-link text-center" onclick="changeActive(this)" href="#">Clientes</a>
               </li>
-            </div>
+            </div> -->
             <div>
               <li class="nav-item">
                 <a class="nav-link text-center" onclick="changeActive(this)" href="#portfolio">Portfolio</a>
@@ -268,330 +268,78 @@
     </section>
 
     <div class="container">
-      <label for="cursoSelector">Selecciona un curso</label>
-      <select id="cursoSelector" class="form-select" aria-label="Default select example">
-        <option selected>None</option>
-        <option value="1" class="fw-medium">VENTA INMOBILIARIA: Transformación Digital Del Mercado Inmobiliario</option>
-        <option value="2" class="fw-medium">CURSO EN EMPRESAS: Neuromarketing Digital</option>
-        <option value="3" class="fw-medium">NEUROVENTAS DIGITALES</option>
-        <option value="4" class="fw-medium">WHATSAPP MARKETING</option>
-        <option value="5" class="fw-medium">SECRETOS DEL COPYCHAT</option>
-      </select>
-    </div>
-
-    <!-- curso 1 NEW -->
-    <article class="container">
       <div class="row">
-        <div id="curso1" class="col-lg-12 mt-4">
-          <div class="row card-container">
-            <!-- Imagen a la izquierda -->
-            <div class="col-lg-6">
-              <div id="carousel1" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <div class="col-sm-4 mb-3 mb-sm-0 mt-5 mx-auto d-flex justify-content-center">
+          <a href="./pages/course1.html" style="text-decoration: none;">
+            <div class="card" style="width: 25rem;">
+              <img src="./assets/portada.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">VENTA INMOBILIARIA</h5>
+                <p class="card-text">Explorá tendencias inmobiliarias, convertí clientes digitales en presenciales,
+                  potenciá crecimiento con marketing conectivo y segmentación precisa.</p>
               </div>
+              <div class="card-footer text-bg-dark"></div>
             </div>
-            <!-- Imagen del curso fin -->
-            <div class="col-lg-6">
-              <!-- Contenido del curso -->
-              <h3 class="mt-4 fw-bold">VENTA INMOBILIARIA</h3>
-              <h5 class="mt-3">
-                Transformación Digital Del Mercado Inmobiliario
-              </h5>
-              <p class="mt-3">
-                Descubre las últimas tendencias en el sector inmobiliario
-                enfrentando nuevos retos de la comunicación digital. Sumérgete
-                en la transformación del vendedor inmobiliario, aprendiendo
-                estrategias para convertir clientes digitales en presenciales.
-                Explora formas efectivas de presentar propiedades en el
-                entorno digital y potencia el crecimiento mediante el
-                marketing conectivo producto-marca. Define tus clientes
-                objetivos con una segmentación precisa basada en propiedades y
-                operaciones. Suma habilidades con el "Árbol de producto
-                digital": desde el código simbólico del producto hasta una
-                comunicación adecuada con el cliente. Conoce las claves para
-                campañas publicitarias exitosas que destacarán tu presencia en
-                el mercado.
-              </p>
-              <a href="#" class="btn btn-danger mt-3">Más información</a>
+          </a>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0 mt-5 mx-auto d-flex justify-content-center">
+          <a href="#" style="text-decoration: none;">
+            <div class="card" style="width: 25rem;">
+              <img src="./assets/portada.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NEUROMARKETING DIGITAL</h5>
+                <p class="card-text">Curso integral: Comunicación efectiva, copywriting, branding, edición multimedia,
+                  neuro segmentación
+                  y estrategias personalizadas para marketing digital competitivo.</p>
+              </div>
+              <div class="card-footer text-bg-dark"></div>
             </div>
-          </div>
+          </a>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0 mt-5 mx-auto d-flex justify-content-center">
+          <a href="#" style="text-decoration: none;">
+            <div class="card" style="width: 25rem;">
+              <img src="./assets/portada.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NEUROVENTAS DIGITAL</h5>
+                <p class="card-text">Curso especializado: Decodificación mental del comprador digital, estrategias de
+                  avatares, diálogo digital, embudos de conversión.</p>
+              </div>
+              <div class="card-footer text-bg-dark"></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0 mt-5 mx-auto d-flex justify-content-center">
+          <a href="#" style="text-decoration: none;">
+            <div class="card" style="width: 25rem;">
+              <img src="./assets/portada.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">WHATSAPP MARKETING</h5>
+                <p class="card-text">Curso WhatsApp Business: Catálogos, herramientas empresariales, estrategias de
+                  mensajes, marketing objetivo, embudos específicos, influencia efectiva.</p>
+              </div>
+              <div class="card-footer text-bg-dark"></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0 mt-5 mx-auto d-flex justify-content-center">
+          <a href="#" style="text-decoration: none;">
+            <div class="card" style="width: 25rem;">
+              <img src="./assets/portada.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SECRETOS DEL COPY CHAT</h5>
+                <p class="card-text">
+                  Curso único: Neuroventas, Neuromarketing, ventas digitales efectivas, influencia cerebral, cierre de
+                  ventas online y presenciales.</p>
+              </div>
+              <div class="card-footer text-bg-dark"></div>
+            </div>
+          </a>
         </div>
       </div>
+    </div>
 
-      <!-- curso 2 NEW -->
-      <div class="container">
-        <div class="row">
-          <div id="curso2" class="col-lg-12 mt-4">
-            <div class="row card-container">
-              <!-- Imagen a la izquierda -->
-              <div class="col-lg-6">
-                <div id="carousel2" class="carousel slide">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-              <!-- Imagen del curso fin -->
-              <div class="col-lg-6">
-                <!-- Contenido del curso -->
-                <h3 class="mt-4 fw-bold">CURSO EN EMPRESAS</h3>
-                <h5 class="mt-3">
-                  Neuromarketing Digital
-                </h5>
-                <p class="mt-3">
-                  Descubre el arte de la comunicación efectiva con nuestro curso
-                  integral. Desde la creación de un código simbólico de producto
-                  hasta el dominio de la comunicación visual, explorarás cómo
-                  adaptar el copywriting a diferentes fases de conciencia de
-                  compra. Aprenderás a construir una imagen de marca sólida y a
-                  utilizar plataformas de edición de fotografía y video
-                  diseñadas para principiantes. Además, sumérgete en el
-                  fascinante mundo de la neuro segmentación y aprende a
-                  personalizar estrategias de marketing según la psicología del
-                  consumidor. Este curso te proporcionará las herramientas
-                  esenciales para destacar en un entorno digital competitivo.
-                </p>
-                <a href="#" class="btn btn-danger mt-3">Más información</a>
-              </div>
-            </div>
-          </div>
 
-          <!-- curso 3 NEW -->
-          <div class="container">
-            <div class="row">
-              <div id="curso3" class="col-lg-12 mt-4">
-                <div class="row card-container">
-                  <!-- Imagen a la izquierda -->
-                  <div class="col-lg-6">
-                    <div id="carousel3" class="carousel slide">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active"
-                          aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1"
-                          aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2"
-                          aria-label="Slide 3"></button>
-                      </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- Imagen del curso fin -->
-                  <div class="col-lg-6">
-                    <!-- Contenido del curso -->
-                    <h3 class="mt-4 fw-bold">NEUROVENTAS DIGITALES</h3>
-                    <p class="mt-3">
-                      Descifra los misterios de la mente del comprador en el ámbito
-                      digital con nuestro curso especializado. Explora los
-                      comportamientos del consumidor y aprende a crear un código
-                      simbólico que represente tu producto y marca de manera
-                      poderosa. Profundiza en la identificación de clientes
-                      objetivos a través de avatares y perfecciona el arte del
-                      diálogo digital. Descubre cómo transformar a un cliente de
-                      matriz digital en una venta concreta y domina la creación de
-                      embudos de conversión digital en diversos medios. Este curso
-                      te equipará con conocimientos clave para influir positivamente
-                      en las decisiones de compra en el entorno digital actual.
-                    </p>
-                    <a href="#" class="btn btn-danger mt-3">Más información</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- curso 4 NEW -->
-              <div class="container">
-                <div class="row">
-                  <div id="curso4" class="col-lg-12 mt-4">
-                    <div class="row card-container">
-                      <!-- Imagen a la izquierda -->
-                      <div class="col-lg-6">
-                        <div id="carousel4" class="carousel slide">
-                          <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active"
-                              aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1"
-                              aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2"
-                              aria-label="Slide 3"></button>
-                          </div>
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                            </div>
-                            <div class="carousel-item">
-                              <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                            </div>
-                            <div class="carousel-item">
-                              <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                            </div>
-                          </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                          </button>
-                        </div>
-                      </div>
-                      <!-- Imagen del curso fin -->
-                      <div class="col-lg-6">
-                        <!-- Contenido del curso -->
-                        <h3 class="mt-4 fw-bold">WHATSAPP MARKETING</h3>
-                        <p class="mt-3">
-                          Explora el potencial de WhatsApp Business con nuestro curso
-                          práctico. Desde la creación de catálogos digitales hasta el
-                          aprovechamiento de herramientas empresariales integradas,
-                          descubre cómo maximizar el uso de WhatsApp para tu negocio.
-                          Aprende estrategias efectivas de reenvío de mensajes y
-                          sumérgete en el marketing por objetivos. Desarrolla embudos de
-                          comunicación específicos para WhatsApp y domina el arte de
-                          influir a través de este canal. Con 6 horas de capacitación,
-                          este curso te proporcionará las habilidades esenciales para
-                          aprovechar al máximo la plataforma de mensajería más utilizada
-                          del mundo.
-                        </p>
-                        <a href="#" class="btn btn-danger mt-3">Más información</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- curso 5 NEW -->
-                  <div class="container">
-                    <div class="row">
-                      <div id="curso5" class="col-lg-12 mt-4">
-                        <div class="row card-container">
-                          <!-- Imagen a la izquierda -->
-                          <div class="col-lg-6">
-                            <div id="carousel5" class="carousel slide">
-                              <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active"
-                                  aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1"
-                                  aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carousel5" data-bs-slide-to="2"
-                                  aria-label="Slide 3"></button>
-                              </div>
-                              <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                  <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="./assets/portada.jpg" class="d-block w-100" alt="..." />
-                                </div>
-                              </div>
-                              <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                              </button>
-                              <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Imagen del curso fin -->
-                          <div class="col-lg-6">
-                            <!-- Contenido del curso -->
-                            <h3 class="mt-4 fw-bold">SECRETOS DEL COPYCHAT</h3>
-                            <p class="mt-3">
-                              Explora un método innovador para potenciar tus ventas en el
-                              entorno digital con nuestro curso único. La fusión de
-                              Neuroventas y Neuromarketing te ofrece la herramienta
-                              definitiva para hacer que vender en línea sea más fácil,
-                              efectivo y rápido. Sumérgete en el concepto de "Neuroventas:
-                              mente digital", desde cómo funciona hasta los conectores
-                              corticales, emocionales y reptilianos que influyen en las
-                              decisiones de compra. Descubre cómo estimular el deseo y
-                              cerrar ventas en el ámbito digital, aprende a pasar de
-                              consultas digitales a reuniones presenciales y domina la
-                              bajada publicitaria con neuromarketing. Con 12 horas de
-                              capacitación, este curso también ofrece coaching digital para
-                              dueños y gerentes, brindándote las herramientas necesarias
-                              para comprender y liderar el desarrollo digital de tu empresa
-                              en esta nueva era.
-                            </p>
-                            <a href="#" class="btn btn-danger mt-3">Más información</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-    </article>
     <!-- cursos & capacitaciones fin -->
 
     <!-- sección portfolio -->

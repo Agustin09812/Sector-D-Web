@@ -128,6 +128,16 @@
   font-style: italic;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -140,6 +150,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  animation: fadeIn 500ms ease-in-out;
 }
 
 /* ### WHATSAPP BUTTON ### */
@@ -200,6 +211,23 @@ body {
 .navbar-scrolled {
   background-color: rgba(33, 33, 33, 0.95);
   transition: background-color 500ms ease;
+}
+
+.dropdown-menu-container {
+  position: relative;
+  top: 7px;
+}
+
+.dropdown-menu {
+  background-color: rgba(33, 33, 33, 0.95);
+}
+
+.dropdown-menu li a {
+  color: #fff;
+
+  &:hover {
+    transition: all 250ms ease;
+  }
 }
 
 /* ##################################################################
@@ -353,19 +381,26 @@ body {
 ###################    MAIN: COURSE SECTION    ####################
 ################################################################## */
 
+.card {
+  transition: all 250ms ease;
+  box-shadow: 0 0 5px 5px #0000001a,
+    0 0 10px 10px #0000001a, 0 0 20px 20px #0000001a;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #dc40fb50;
+    box-shadow: 0 0 5px 5px #dd40fb1a,
+      0 0 10px 10px #dd40fb1a, 0 0 20px 20px #dd40fb1a;
+    border-color: none;
+    cursor: pointer;
+  }
+}
+
 .card-header {
   background: #dd40fb;
   background: linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
   background: -webkit-linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
   background: -moz-linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
-  border-style: none;
-}
-
-.card-footer {
-  background: #dd40fb;
-  background: linear-gradient(270deg, #7351fd 0%, #dd40fb 80%);
-  background: -webkit-linear-gradient(270deg, #7351fd 0%, #dd40fb 80%);
-  background: -moz-linear-gradient(270deg, #7351fd 0%, #dd40fb 80%);
   border-style: none;
 }
 
@@ -384,6 +419,17 @@ body {
 
 .card-text {
   padding: 0.5rem;
+}
+
+.btn-info {
+  color: #14363d;
+
+  &:hover {
+    background-color: #0dcaf0;
+    box-shadow: 0 0 5px 5px #0dcaf01a,
+      0 0 10px 10px #0dcaf01a, 0 0 20px 20px #0dcaf01a;
+    border-color: none;
+  }
 }
 
 /* ##################################################################
@@ -618,6 +664,16 @@ footer {
   }
 }
 
+@media (max-width: 425px) {
+  .card {
+    width: 18rem !important;
+
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+}
+
 @media (max-width: 350px) {
   .intro-section {
     padding: 5rem;
@@ -636,3 +692,12 @@ footer {
     font-size: 1rem;
   }
 }
+
+/* ##################################################################
+#######################    COURSES PAGES    ########################
+################################################################## */
+
+
+/* ##################################################################
+####################################################################
+################################################################## */

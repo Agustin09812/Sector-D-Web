@@ -40,25 +40,3 @@ window.addEventListener('resize', function () {
     navbarNavList.classList.remove('mt-4')
   }
 })
-
-window.dispatchEvent(new Event('resize'))
-
-function mostrarCurso(cursoSeleccionado) {
-  if (cursoSeleccionado === 'open') {
-    for (let i = 1; i <= 5; i++) {
-      $('#curso' + i).fadeOut(1000) // milisegundos (AJUSTAR A GUSTO)
-    }
-  } else {
-    for (let i = 1; i <= 5; i++) {
-      document.getElementById('curso' + i).style.display = 'none'
-    }
-    $('#curso' + cursoSeleccionado).fadeIn(1000) // milisegundos. (AJUSTAR A GUSTO)
-  }
-}
-
-document.getElementById('cursoSelector').addEventListener('change', function () {
-  const cursoSeleccionado = this.value
-  mostrarCurso(cursoSeleccionado)
-})
-
-mostrarCurso('open')
