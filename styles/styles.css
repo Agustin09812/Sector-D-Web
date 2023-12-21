@@ -128,16 +128,6 @@
   font-style: italic;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -150,7 +140,6 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  animation: fadeIn 500ms ease-in-out;
 }
 
 /* ### WHATSAPP BUTTON ### */
@@ -260,14 +249,12 @@ body {
   max-height: fit-content;
   overflow: hidden;
   z-index: -100;
-  /* Asegura que la imagen esté detrás del contenido */
 }
 
 .background-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Ajusta la imagen para cubrir el contenedor */
 }
 
 .intros {
@@ -387,12 +374,9 @@ body {
     0 0 10px 10px #0000001a, 0 0 20px 20px #0000001a;
 
   &:hover {
-    transform: scale(1.1);
-    background-color: #dc40fb50;
-    box-shadow: 0 0 5px 5px #dd40fb1a,
-      0 0 10px 10px #dd40fb1a, 0 0 20px 20px #dd40fb1a;
+    box-shadow: 0 0 5px 5px #0dcaf01a,
+      0 0 10px 10px #0dcaf01a, 0 0 20px 20px #0dcaf01a;
     border-color: none;
-    cursor: pointer;
   }
 }
 
@@ -404,21 +388,8 @@ body {
   border-style: none;
 }
 
-.card-body {
-  padding: 2rem;
-}
-
 .card-title {
   font-weight: 700;
-  padding: 0.5rem;
-}
-
-.card-subtitle {
-  padding: 0.5rem;
-}
-
-.card-text {
-  padding: 0.5rem;
 }
 
 .btn-info {
@@ -429,6 +400,7 @@ body {
     box-shadow: 0 0 5px 5px #0dcaf01a,
       0 0 10px 10px #0dcaf01a, 0 0 20px 20px #0dcaf01a;
     border-color: none;
+    cursor: pointer;
   }
 }
 
@@ -440,69 +412,68 @@ body {
 ##################    MAIN: PORTFOLIO SECTION    ###################
 ################################################################## */
 
-.portfolio {
-  padding: 4rem 0;
+.gallery {
+  margin-top: 40px;
 }
 
-.portfolio button {
-  text-transform: capitalize;
-}
-
-.portfolio-box {
+.gallery .gallery-item {
   position: relative;
-  width: 100%;
-  height: 18.5rem;
   overflow: hidden;
-  margin-bottom: 1.2rem;
-  border-top: 0.5rem solid #40bfff;
+  border-radius: 10px;
 }
 
-.portfolio-box img {
-  width: 100%;
-  height: 100%;
+.gallery .gallery-item img {
+  transition: 0.3s;
 }
 
-.portfolio-box .portfolio-info {
-  background-color: rgba(64, 191, 255, 0.75);
-  width: 100%;
-  height: 100%;
+.gallery .gallery-links {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   opacity: 0;
-  visibility: hidden;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3;
 }
 
-.portfolio-box .portfolio-info .caption {
-  text-align: center;
+.gallery .gallery-links .preview-link,
+.gallery .gallery-links .details-link {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  line-height: 1.2;
+  margin: 30px 8px 0 8px;
+}
+
+.gallery .gallery-links .preview-link:hover,
+.gallery .gallery-links .details-link:hover {
   color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.portfolio-box .portfolio-info .caption h4 {
-  text-transform: uppercase;
-  display: block;
+.gallery .gallery-links .details-link {
+  font-size: 30px;
+  line-height: 0;
 }
 
-.portfolio-box:hover img {
-  transform: scale(1.5);
-  transition-duration: 1s;
-  transition-property: all;
-}
-
-.portfolio-box:hover .portfolio-info {
+.gallery .gallery-item:hover .gallery-links {
   opacity: 1;
-  visibility: visible;
-  transition-duration: 1s;
-  transition-property: all;
 }
 
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+.gallery .gallery-item:hover .preview-link,
+.gallery .gallery-item:hover .details-link {
+  margin-top: 0;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.glightbox-clean .gslide-description {
+  background: #222425;
+}
+
+.glightbox-clean .gslide-title {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
 }
 
 /* ##################################################################
@@ -654,6 +625,18 @@ footer {
   }
 }
 
+@media (max-width: 576px) {
+  .cardcontainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 22rem;
+  }
+
+}
+
 @media (max-width: 480px) {
   .intros h1 {
     font-size: 4rem;
@@ -665,12 +648,14 @@ footer {
 }
 
 @media (max-width: 425px) {
-  .card {
-    width: 18rem !important;
 
-    &:hover {
-      transform: scale(1.07);
-    }
+  .cardcontainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 16rem;
   }
 }
 
