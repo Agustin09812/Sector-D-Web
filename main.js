@@ -75,15 +75,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function changeActive(element) {
-    let navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    let navLinks = document.querySelectorAll('.navbar-nav .nav-link')
 
     navLinks.forEach(function (link) {
-        link.classList.remove('active');
-        link.classList.remove('hovered'); // Elimina la clase de hover si existe
-    });
+        link.classList.remove('active')
+        link.classList.remove('hovered')
+    })
 
-    element.classList.add('active');
+    element.classList.add('active')
+    element.classList.add('hovered')
+}
 
-    // Añade la clase de hover al elemento actual
-    element.classList.add('hovered');
+// ====== ACCOUNT SECTION ======
+
+
+function toggleRecoverPassword() {
+    let loginForm = document.getElementById('loginForm')
+    let recoverPasswordSection = document.getElementById('recoverPasswordSection')
+
+    if (loginForm.style.display !== 'none') {
+        loginForm.style.display = 'none'
+        recoverPasswordSection.style.display = 'block'
+    } else {
+        loginForm.style.display = 'block'
+        recoverPasswordSection.style.display = 'none'
+    }
+}
+
+function recoverPassword() {
+    let email = document.getElementById('recoverEmail').value
+    alert('Enviar solicitud de recuperación de contraseña para: ' + email)
+}
+
+function loginWithGoogle() {
+    alert('work in progress...')
+}
+
+function validatePIN(pin) {
+    // Expresión regular para validar el formato del PIN
+    const pinRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{10,}$/
+
+    return pinRegex.test(pin)
+}
+
+function toggleCreateAccount() {
+    document.getElementById('loginForm').style.display = 'none'
+    document.getElementById('recoverPasswordSection').style.display = 'none'
+    document.getElementById('createAccountSection').style.display = 'block'
+}
+
+function createAccount() {
+    const username = document.getElementById('username').value
+    const email = document.getElementById('createEmail').value
+    const phone = document.getElementById('phone').value
+    const password = document.getElementById('createPassword').value
+    const pin = document.getElementById('pin').value
+
+    // Validar el formato del PIN
+    if (!validatePIN(pin)) {
+        alert("El PIN debe contener al menos 10 caracteres, incluyendo mayúsculas, minúsculas, un número y un símbolo.")
+        return
+    }
+
+    // Mostrar alerta
+    alert("Cuenta creada exitosamente")
+
+    // Regresar al formulario principal
+    toggleCreateAccount()
+}
+
+function toggleLoginForm() {
+    document.getElementById('loginForm').style.display = 'block'
+    document.getElementById('recoverPasswordSection').style.display = 'none'
+    document.getElementById('createAccountSection').style.display = 'none'
 }
