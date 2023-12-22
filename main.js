@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+
 function changeActive(element) {
     let navLinks = document.querySelectorAll('.navbar-nav .nav-link')
     navLinks.forEach(function (link) {
