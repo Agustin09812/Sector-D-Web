@@ -368,18 +368,6 @@ body {
 ###################    MAIN: COURSE SECTION    ####################
 ################################################################## */
 
-.card {
-  transition: all 250ms ease;
-  box-shadow: 0 0 5px 5px #0000001a,
-    0 0 10px 10px #0000001a, 0 0 20px 20px #0000001a;
-
-  &:hover {
-    box-shadow: 0 0 5px 5px #0dcaf01a,
-      0 0 10px 10px #0dcaf01a, 0 0 20px 20px #0dcaf01a;
-    border-color: none;
-  }
-}
-
 .card-header {
   background: #dd40fb;
   background: linear-gradient(270deg, #dd40fb 0%, #7351fd 80%);
@@ -474,6 +462,40 @@ body {
 .glightbox-clean .gslide-title {
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
+}
+
+/* ##################################################################
+####################################################################
+################################################################## */
+
+/* ##################################################################
+###################    MAIN: CLIENTS SECTION    ####################
+################################################################## */
+
+.clients .clients-slider .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.clients .clients-slider .swiper-slide img:hover {
+  opacity: 1;
+}
+
+.clients .clients-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #40bfff;
+}
+
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #40bfff;
 }
 
 /* ##################################################################
