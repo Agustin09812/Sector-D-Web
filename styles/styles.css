@@ -653,17 +653,18 @@ footer {
             content: "";
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
             width: 0;
             height: 2px;
             background-color: #ffffff50;
-            transition: width 250ms ease, background-position 250ms ease;
-            transform-origin: bottom right;
+            transition: width 250ms ease, left 250ms ease;
+            transform-origin: bottom center;
         }
 
         &:hover::before {
             width: 100%;
             background-position: 100% 0;
+            left: 0;
         }
     }
 }
