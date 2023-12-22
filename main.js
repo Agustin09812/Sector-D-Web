@@ -75,10 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function changeActive(element) {
-    let navLinks = document.querySelectorAll('.navbar-nav .nav-link')
-    navLinks.forEach(function (link) {
-        link.classList.remove('active')
-    })
+    let navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
-    element.classList.add('active')
+    navLinks.forEach(function (link) {
+        link.classList.remove('active');
+        link.classList.remove('hovered'); // Elimina la clase de hover si existe
+    });
+
+    element.classList.add('active');
+
+    // Añade la clase de hover al elemento actual
+    element.classList.add('hovered');
 }

@@ -656,8 +656,8 @@ footer {
             left: 50%;
             width: 0;
             height: 2px;
-            background-color: #ffffff50;
-            transition: width 250ms ease, left 250ms ease;
+            background-color: #ffffff85;
+            transition: width 250ms ease, left 250ms ease, background-color 250ms ease;
             transform-origin: bottom center;
         }
 
@@ -667,6 +667,11 @@ footer {
             left: 0;
         }
     }
+
+    .nav-item .nav-link.hovered::before {
+        background-color: #fff;
+    }
+
 }
 
 @media (max-width: 991px) {
