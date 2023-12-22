@@ -134,7 +134,7 @@
   box-sizing: border-box;
 }
 
-html {
+:root {
   scroll-behavior: smooth;
 }
 

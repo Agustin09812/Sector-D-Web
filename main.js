@@ -16,15 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  function changeActive(element) {
-    let navLinks = document.querySelectorAll('.navbar-nav .nav-link')
-    navLinks.forEach(function (link) {
-      link.classList.remove('active')
-    })
-
-    element.classList.add('active')
-  }
-
   window.addEventListener('resize', function () {
     let windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
     let navbarNavList = document.getElementById('navbarNavList')
@@ -47,9 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     selector: '.glightbox'
   })
 
-  /**
-   * Clients Slider
-   */
   new Swiper('.clients-slider', {
     speed: 400,
     loop: true,
@@ -81,6 +69,15 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 120
       }
     }
-  });
+  })
 
 })
+
+function changeActive(element) {
+  let navLinks = document.querySelectorAll('.navbar-nav .nav-link')
+  navLinks.forEach(function (link) {
+    link.classList.remove('active')
+  })
+
+  element.classList.add('active')
+}
