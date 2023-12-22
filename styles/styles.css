@@ -207,6 +207,32 @@ body {
     top: 7px;
 }
 
+/* .nav-item {
+    position: relative;
+}
+
+.nav-item .nav-link {
+    position: relative;
+    text-decoration: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #ffffff50;
+        transition: width 250ms ease, background-position 250ms ease;
+        transform-origin: bottom right;
+    }
+
+    &:hover::before {
+        width: 100%;
+        background-position: 100% 0;
+    }
+} */
+
 .dropdown-menu {
     background-color: rgba(33, 33, 33, 0.95);
 }
@@ -613,6 +639,10 @@ footer {
 @media (min-width: 992px) {
     .display-3--title {
         font-size: 1.8rem;
+    }
+
+    .nav-item {
+        position: relative;
     }
 
     .nav-item .nav-link {
