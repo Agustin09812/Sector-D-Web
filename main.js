@@ -89,63 +89,59 @@ function changeActive(element) {
 // ====== ACCOUNT SECTION ======
 
 
-function toggleRecoverPassword() {
-    let loginForm = document.getElementById('loginForm')
-    let recoverPasswordSection = document.getElementById('recoverPasswordSection')
+// function toggleRecoverPassword() {
+//     let loginForm = document.getElementById('loginForm')
+//     let recoverPasswordSection = document.getElementById('recoverPasswordSection')
 
-    if (loginForm.style.display !== 'none') {
-        loginForm.style.display = 'none'
-        recoverPasswordSection.style.display = 'block'
-    } else {
-        loginForm.style.display = 'block'
-        recoverPasswordSection.style.display = 'none'
-    }
-}
+//     if (loginForm.style.display !== 'none') {
+//         loginForm.style.display = 'none'
+//         recoverPasswordSection.style.display = 'block'
+//     } else {
+//         loginForm.style.display = 'block'
+//         recoverPasswordSection.style.display = 'none'
+//     }
+// }
 
-function recoverPassword() {
-    let email = document.getElementById('recoverEmail').value
-    alert('Enviar solicitud de recuperación de contraseña para: ' + email)
-}
+// function recoverPassword() {
+//     let email = document.getElementById('recoverEmail').value
+//     alert('Enviar solicitud de recuperación de contraseña para: ' + email)
+// }
 
-function loginWithGoogle() {
-    alert('work in progress...')
-}
+// function loginWithGoogle() {
+//     alert('work in progress...')
+// }
 
-function validatePIN(pin) {
-    // Expresión regular para validar el formato del PIN
-    const pinRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{10,}$/
+// function validatePIN(pin) {
+//     const pinRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{10,}$/
 
-    return pinRegex.test(pin)
-}
+//     return pinRegex.test(pin)
+// }
 
-function toggleCreateAccount() {
-    document.getElementById('loginForm').style.display = 'none'
-    document.getElementById('recoverPasswordSection').style.display = 'none'
-    document.getElementById('createAccountSection').style.display = 'block'
-}
+// function toggleCreateAccount() {
+//     document.getElementById('loginForm').style.display = 'none'
+//     document.getElementById('recoverPasswordSection').style.display = 'none'
+//     document.getElementById('createAccountSection').style.display = 'block'
+// }
 
-function createAccount() {
-    const username = document.getElementById('username').value
-    const email = document.getElementById('createEmail').value
-    const phone = document.getElementById('phone').value
-    const password = document.getElementById('createPassword').value
-    const pin = document.getElementById('pin').value
+// function createAccount() {
+//     const username = document.getElementById('username').value
+//     const email = document.getElementById('createEmail').value
+//     const phone = document.getElementById('phone').value
+//     const password = document.getElementById('createPassword').value
+//     const pin = document.getElementById('pin').value
 
-    // Validar el formato del PIN
-    if (!validatePIN(pin)) {
-        alert("El PIN debe contener al menos 10 caracteres, incluyendo mayúsculas, minúsculas, un número y un símbolo.")
-        return
-    }
+//     if (!validatePIN(pin)) {
+//         alert("El PIN debe contener al menos 10 caracteres, incluyendo mayúsculas, minúsculas, un número y un símbolo.")
+//         return
+//     }
 
-    // Mostrar alerta
-    alert("Cuenta creada exitosamente")
+//     alert("Cuenta creada exitosamente")
 
-    // Regresar al formulario principal
-    toggleCreateAccount()
-}
+//     toggleCreateAccount()
+// }
 
-function toggleLoginForm() {
-    document.getElementById('loginForm').style.display = 'block'
-    document.getElementById('recoverPasswordSection').style.display = 'none'
-    document.getElementById('createAccountSection').style.display = 'none'
-}
+// function toggleLoginForm() {
+//     document.getElementById('loginForm').style.display = 'block'
+//     document.getElementById('recoverPasswordSection').style.display = 'none'
+//     document.getElementById('createAccountSection').style.display = 'none'
+// }
