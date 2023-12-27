@@ -295,10 +295,10 @@ body {
 
     &:hover {
         color: #fff;
-        background: #c6006f;
-        background: linear-gradient(0deg, #c6006f 0%, #ff0548 80%);
-        background: -webkit-linear-gradient(0deg, #c6006f 0%, #ff0548 80%);
-        background: -moz-linear-gradient(0deg, #c6006f 0%, #ff0548 80%);
+        background: #ff597f;
+        background: linear-gradient(0deg, #ff597f 0%, #ff0548 80%);
+        background: -webkit-linear-gradient(0deg, #ff597f 0%, #ff0548 80%);
+        background: -moz-linear-gradient(0deg, #ff597f 0%, #ff0548 80%);
         box-shadow: 0 0 5px 5px rgba(198, 0, 111, 0.1),
             0 0 10px 10px rgba(255, 5, 72, 0.1), 0 0 20px 20px rgba(255, 5, 72, 0.1);
         border-color: none;
