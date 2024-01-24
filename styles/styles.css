@@ -155,6 +155,7 @@ p {
 body {
     font-family: "Montserrat", sans-serif;
     min-height: 100dvh;
+    overflow-x: hidden;
 }
 
 /* ### WHATSAPP BUTTON ### */
