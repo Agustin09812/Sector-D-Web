@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- añadido "minimum-scale=1" para evitar bugs al escrolear en mobile hacia abajo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+
+    <!-- S.E.O -->
+    <meta name="description"
+        content="Impulsa tu éxito en línea con nuestros servicios de marketing digital de vanguardia. Obtén estrategias personalizadas y resultados tangibles para aumentar tu visibilidad y generar más conversiones.">
+    <meta name="keywords"
+        content="marketing, community manager, manejo de redes sociales, impulsar negocio, negocio online, tienda online, estrategias, diseño gráfico, aumentar clientes, empresas que hagan publicidad en google, empresas que manejen redes sociales, empresas de marketing, empresa community, presupuesto community, presupuesto publicidad en la web, desarrollo web" />
+
+    <link type="images/png" sizes="32x32" href="../assets/favicon-32x32.png" rel="icon" />
+
+    <!-- estilos -->
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+
+    <!-- ==== librerias === -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ================== -->
+    <title>Armá tu Web</title>
+</head>
+
+<body>
+    <header>
+        <!-- sección navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark menu fixed-top">
+            <section class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo.png" style="width: 95px" alt="logo image" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" id="navbarNavList">
+                        <article>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" onclick="changeActive(this)"
+                                    href="../index.html">Inicio</a>
+                            </li>
+                        </article>
+                        <article>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" onclick="changeActive(this)"
+                                    href="#webdevelopment">Servicios</a>
+                            </li>
+                        </article>
+                        <!-- <article>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" onclick="changeActive(this)"
+                                    href="../index.html">Capacitaciones</a>
+                            </li>
+                        </article>
+                        <article>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" onclick="changeActive(this)"
+                                    href="../index.html">Portfolio</a>
+                            </li>
+                        </article>
+                        <article>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" onclick="changeActive(this)"
+                                    href="../index.html">Clientes</a>
+                            </li>
+                        </article>
+                        <article>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" onclick="changeActive(this)"
+                                    href="../index.html">Contacto</a>
+                            </li>
+                        </article> -->
+                    </ul>
+                </section>
+                <section class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="../pages/whatsapp-marketing.html"
+                                class="nav-link d-flex justify-content-center"><button type="button"
+                                    class="btn btn-outline-light btn-sm">Whatsapp
+                                    Marketing</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/web-build.html" class="nav-link d-flex justify-content-center"><button
+                                    type="button" class="btn btn-outline-light btn-sm">¡Armá tu
+                                    Web!</button></a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
+        <!-- sección navbar fin -->
+
+        <main>
+            <!-- sección portada -->
+            <section id="home" class="intro-section">
+                <article class="background-image">
+                    <img src="../assets/portada-2.jpg" class="img-fluid" alt="Fondo" />
+                </article>
+                <section class="container d-flex justify-content-center">
+                    <article class="introscontainer text-white d-flex justify-content-center">
+                        <!-- comienza el contenido del intro -->
+                        <aside class="intros">
+                            <h1><span>¡ARMÁ TU WEB!</span></h1>
+                            <p>
+                                <span> Creando conexiones entre empresas y clientes.</span>
+                            </p>
+                        </aside>
+                    </article>
+                </section>
+            </section>
+            <!-- sección portada fin -->
+
+            <!-- contenido desarrollo web  -->
+            <section class="container" id="web-section-one">
+                <!-- START THE WEB DEVELOPMENT CONTENT  -->
+                <article class="row mt-4 mb-4">
+                    <aside class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-start">
+                        <div class="webdevelopment-pic">
+                            <img src="../assets/service-2.png" alt="web development illustration" class="img-fluid">
+                        </div>
+                    </aside>
+                    <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <article class="webdevelopment-content">
+                            <aside class="icon d-block fas fa-code"></aside>
+                            <h3 class="display-3--title"><strong>DESARROLLO WEB</strong></h3>
+                            <p class="lh-lg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
+                                doloremque autem quibusdam blanditiis harum alias hic accusantium
+                                maxime atque ratione magni repellat?
+                            </p>
+                        </article>
+                        <section class="webdevelopment-content">
+                            <article class="icon d-block fas fa-cloud-upload-alt"></article>
+                            <h3 class="display-3--title"><strong>HOSTING</strong></h3>
+                            <p class="lh-lg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
+                                doloremque autem quibusdam blanditiis harum alias hic accusantium
+                                maxime atque ratione magni repellat?
+                            </p>
+                            <!-- <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                                <span><i class="fas fa-arrow-right"></i></span>
+                            </button> -->
+                        </section>
+                    </section>
+                </article>
+            </section>
+
+            <section id="web-section-two">
+                <article class="container">
+                    <aside class="row text-center mt-5">
+                        <h1 class="display-3 mt-5 fw-bold text-capitalize">
+                            Últimos Trabajos Realizados
+                        </h1>
+                        <div class="heading-line"></div>
+                        <p class="lead">
+                            Potenciamos marcas en el mundo digital con estrategias innovadoras, desde SEO hasta campañas
+                            creativas y
+                            análisis de datos.
+                        </p>
+                    </aside>
+                </article>
+            </section>
+
+        </main>
+
+
+        <footer>
+            <!-- sección footer -->
+            <section class="footer-bottom pt-2 pb-4">
+                <article class="container">
+                    <aside class="row py-4 text-center text-white g-2">
+                        <div class="col-lg-12 col-md-6">
+                            ¡Seguinos en nuestras redes!
+                        </div>
+                        <div class="col-lg-12 col-md-6">
+                            <a href="https://www.facebook.com/SectorDeMarketing?mibextid=ZbWKwL" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/sectordemarketing?igsh=YzVkODRmOTdmMw=="
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/sector-de-marketing/about/?viewAsMember=true"
+                                target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.tiktok.com/@lorenamartin.neuroventas?_t=8iZIDjOAHvZ&_r=1"
+                                target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </aside>
+                    <section class="row text-center text-white">
+                        <article class="col-12">
+                            <aside class="footer-bottom__copyright">
+                                &COPY; Copyright 2023 | Sector de Marketing | Todos los derechos reservados
+                            </aside>
+                        </article>
+                    </section>
+                </article>
+            </section>
+        </footer>
+
+        <!-- whatsapp btn  -->
+
+        <div class="wppbtn-container">
+            <a href="https://api.whatsapp.com/send?phone=5491169585061&text=Hola%20Lorena!,%20mi%20nombre%20es%20"
+                target="_blank" class="shadow btn-primary rounded-circle wppbtn">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <!-- === scripts === -->
+        <script src="../main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/3151bdbeb8.js" crossorigin="anonymous"></script>
+        <!-- =============== -->
+</body>
+
+</html>

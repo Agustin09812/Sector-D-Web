@@ -213,7 +213,7 @@ body {
 }
 
 .navbar-scrolled {
-    background-color: rgba(33, 33, 33, 0.95);
+    background-color: #212121f2;
     transition: background-color 500ms ease;
 }
 
@@ -223,7 +223,7 @@ body {
 }
 
 .dropdown-menu {
-    background-color: rgba(33, 33, 33, 0.95);
+    background-color: #212121f2;
 }
 
 .dropdown-menu li a {
@@ -282,14 +282,14 @@ body {
 .intros h1 {
     font-weight: 800;
     font-size: 6rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 5px #00000066;
     text-align: center;
 }
 
 .intros p {
     text-align: center;
     font-size: 1.5rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 5px #00000066;
 }
 
 .frontpage-btns {
@@ -465,14 +465,14 @@ body {
     inset: 0;
     opacity: 0;
     transition: all ease-in-out 0.3s;
-    background: rgba(0, 0, 0, 0.6);
+    background: #00000099;
     z-index: 3;
 }
 
 .gallery .gallery-links .preview-link,
 .gallery .gallery-links .details-link {
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.5);
+    color: #ffffff80;
     transition: 0.3s;
     line-height: 1.2;
     margin: 30px 8px 0 8px;
@@ -506,7 +506,7 @@ body {
 }
 
 .glightbox-clean .gslide-title {
-    color: rgba(255, 255, 255, 0.8);
+    color: #ffffffcc;
     margin: 0;
 }
 
@@ -554,8 +554,8 @@ body {
 
 .gradient {
     background: linear-gradient(153deg,
-            rgba(221, 64, 251, 0.95) 0%,
-            rgba(115, 81, 253, 0.95) 80%);
+            #dd40fbf2 0%,
+            #7351fdf2 80%);
 }
 
 .get-started {
@@ -610,15 +610,10 @@ body {
 ################################################################## */
 
 footer {
-    background-color: #151414;
+    background-color: #212121;
 }
 
-.footer {
-    padding-top: 1rem;
-    background-color: #151414;
-}
-
-.footer-sm a {
+.footer-bottom a {
     color: #fff;
 
     &:hover {
@@ -626,17 +621,13 @@ footer {
     }
 }
 
-.footer-sm a i {
+.footer-bottom a i {
     font-size: 1.5rem;
     margin-left: 1rem;
 }
 
-.footer-bottom {
-    background-color: #000;
-}
-
 .footer-bottom__copyright {
-    color: #6c757d;
+    color: #fff;
     font-weight: 400;
 }
 
@@ -785,5 +776,42 @@ footer {
 
     .intros p {
         font-size: 1rem;
+    }
+}
+
+
+/* ##################################################################
+#####################    WEB BUILD SECTION    ######################
+################################################################## */
+
+.webdevelopment-pic {
+    max-width: 100%;
+}
+
+.webdevelopment-content p {
+    font-size: 0.8rem;
+}
+
+.webdevelopment-content .icon {
+    font-size: 1.5rem;
+    color: #dc40fb;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 992px) {
+
+    .webdevelopment-content {
+        margin-top: 5rem;
+    }
+
+    .webdevelopment-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .webdevelopment-content .icon {
+        font-size: 2.5rem;
     }
 }
