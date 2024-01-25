@@ -624,7 +624,7 @@ footer {
 
 .footer-bottom a i {
     font-size: 1.5rem;
-    margin-left: 1rem;
+    margin: .5rem;
 }
 
 .footer-bottom__copyright {
